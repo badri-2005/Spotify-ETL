@@ -12,7 +12,7 @@ import pymysql
 connection = pymysql.connect(
     host='localhost',
     user='root',
-    password='Badri@312',
+    password='root',
     database='spotify_db',
 )
 cursor = connection.cursor()
@@ -21,8 +21,8 @@ cursor = connection.cursor()
 #Set up Client Credentials
 
 sp = spotipy.Spotify(auth_manager=SpotifyClientCredentials
-    (client_id = "9f5c29986f484fe6bc1f376ccddf9b19",
-     client_secret = "805c6db119714ee780b09d5540cbb245"
+    (client_id = "id",
+     client_secret = "secretid"
 
 ))
 
